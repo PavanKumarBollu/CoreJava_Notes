@@ -1,0 +1,62 @@
+EveryClass in java have two parts 
+	1. Has Part
+	2. Does Part
+
+
+
+
+Has Part
+========
+	in has part we will declare the variables and assign some values to it
+
+
+Does Part
+=========
+	does part is nothing but methods which we will use to do some activity 
+
+Note: if you want to do some activity you must and should do that inside a method otherwise compile time error.
+
+
+Example:
+
+	-->Student info
+
+class Student
+{
+	//has part
+	String name	= "name";
+	int age		= 24;
+	String rollNo 	= "CSE01";
+
+	public void display()
+	{
+		System.out.println("Student Name "	+ name);
+		System.out.println("Student Age " 	+ age);
+		System.out.println("Student rollNo " 	+ rollNo);	
+	}
+
+	public void exam()
+	{
+		System.out.println("Student Writing the Exam");
+	}
+
+
+	public static void main(String[] arg)
+	{
+		display();
+		exam();	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

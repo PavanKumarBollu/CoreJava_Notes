@@ -1,0 +1,70 @@
+Strings:
+=========
+
+Topics
+======
+->Immutable Strings and String Pool
+->String Class and Methods
+->StringBuffer and StringBuilder
+->StringTokenizer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String Tokenizer:
+=================
+
+A StringTokenizer class in Java is a utility class that allows you to break a string into tokens. 
+A token is a smaller unit of a string, often delimited by specific characters.
+
+
+
+
+Note:
+=====
+While StringTokenizer is a useful tool,it's considered a legacy class. 
+In modern Java applications, it's often recommended to use regular expressions or the String.split() method 
+for more flexible and efficient tokenization.
+
+
+
+
+Example:
+
+import java.util.StringTokenizer;
+
+
+class StringTokens
+{
+	public static void main(String[] args) 
+	{
+		String sentence = "This is a sample sentence. with delimiters, like commas and periods.";
+        StringTokenizer tokenizer = new StringTokenizer(sentence, ",.");
+
+		String mailId ="pavankumar.g@teksacademy.com";
+
+		StringTokenizer token1 = new StringTokenizer(mailId, "@");
+
+		while(token1.hasMoreTokens())
+		{
+			System.out.println(token1.nextToken());
+		}
+
+        while (tokenizer.hasMoreTokens()) {
+            String token = tokenizer.nextToken();
+            System.out.println(token);
+		}
+	}
+}

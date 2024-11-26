@@ -1,0 +1,121 @@
+Structure of a Java Program:
+===========================
+
+A Java program is a collection of one or more classes.
+Each class contains methods & variables that define the behavior & state of objects of that class.
+
+
+Basic Structure:
+================
+
+public class MyClass {
+
+	public static void main(String[] args)
+	{
+        	// Main execution block
+        	System.out.println("Hello, Welcome to the Java Classes....!");
+    	}
+
+}
+
+
+1. Class Declaration:
+
+   	- public class MyClass:
+
+   	- public: Access modifier, making the class accessible from anywhere.
+     	- class: Keyword to define a class.
+     	- MyClass: Name of the class.
+
+
+2. Main Method:
+
+   	- public static void main(String[] args):
+
+     	- public: Access modifier, making the method accessible from anywhere.
+     	- static: Keyword indicating that the method belongs to the class, not to an instance of the class.
+     	- void: Return type, indicating that the method doesn't return any value.
+     	- main: Special method name, the entry point of a Java application.
+     	- String[] args: An array of strings, used to pass command-line arguments to the program.
+
+	QA:
+
+	1.Why the method name is only main.? 
+
+		Ans:Sunmicro team had a problem of where to start the execution...?
+
+			developer1 said-> start from test method
+			developer2 said -> start from demo method
+			developer3 said-> start from example method 
+		
+		if a application is developed by developer1 and he said start from the test and later is resigned and left,
+		later developer2 is joined he has to find the method from in which file the starting method is there and name of the method.
+
+		to over come this problem sun team they said hey look developers, to overcome this problem we are fixing the name of the method name to main 
+		so every java programmer who wants to write java code has to start from main in this way the compiler is designed.	
+			
+	2.is it compulsory to write the method name as main..?
+		
+		yes to start the program execution it is compulsory but for compiling the code it is not required.
+
+	3.what will happen if i write other name to a method..?
+
+		nothing will happen it will just act like a normal method 
+
+	4. can we overload the main method..?
+
+		we will discuss this in the methods 
+
+	5. can a class can have multiple main methods ..?
+
+		yes but it should differ in parameters otherwise compile time error.
+			in detail we will discuss in the methods concept
+
+
+3. Method Body:
+
+   - The code within the curly braces {} is the method's body.
+   - System.out.println("Hello, World!"); : This line prints the message "Hello, World!" to the console.
+
+
+
+Example: Addition of Two Numbers:
+=================================
+
+
+public class Sum{
+
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 5;
+
+        int sum = num1 + num2;
+        
+        System.out.println("The sum of two numbers is:" + sum);
+    
+    }
+}
+
+
+Key Points:
+==============
+
+- Class: A blueprint for creating objects.
+- Object: An instance of a class.
+- Method: A block of code that performs a specific task.
+- Variable: A container for storing data.
+- Data Types: Java has various data types, including int, double, String, boolean, etc.
+- Operators: Java supports arithmetic, comparison, logical, and bitwise operators.
+- Control Flow Statements: if-else, switch, for, while, and do-while statements control the flow of execution.
+
+
+Task:
+=====
+
+1.Re write the above two programs and execute.?
+
+
+
+
+
+

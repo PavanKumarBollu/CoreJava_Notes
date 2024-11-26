@@ -1,0 +1,224 @@
+Operators
+=========
+
+Operators are symbols which are used to perform the operations on the Operands.
+
+
+The operators are devided in the to the following categories,based on the type of operation the operator will perform
+
+->Airthmetic
+->Relational
+->Equality Operator
+->instanceof
+->Ternary operator
+->logical
+->Bitwise
+->Assignment
+->Evaluation of Java Operands
+
+
+1.Airthmetic Operators
+======================
+
+Binary Operators:
+
+	+ (Addition)
+	- (Subtraction)
+	* (Multiplication)
+	/ (Division)
+	% (Modulus)
+
+Unary Operators:
+
+	++ (Increment)
+	-- (Decrement)
+
+Examples:
+=========
+
+	int a = 10, b = 5;
+	int sum = a + b;
+	int difference = a - b;
+	int product = a * b;
+	int quotient = a / b;
+	int remainder = a % b;
+
+
+
+
+2. RelationalOperators
+======================
+
+	== (Equal to)
+	!= (Not equal to)
+	> (Greater than)
+	< (Less than)
+	>= (Greater than or equal to)
+	<= (Less than or equal to)
+
+It can be applied on every type except boolean type
+
+  System.out.println(10 > 10.5);//false
+  System.out.println('a'> 95.5);//false
+  System.out.println('z' > 'a');//true
+  System.out.println(true>true);//CE:incompatible types
+
+We can't apply relational operator on String objects
+
+  System.out.println("sachin">"dhoni");
+
+Nesting of relational operators in not permitted
+
+  System.out.println(10<20<30); //CE:< can't be applied on boolean and int.
+
+Note::
+  System.out.println(Float.Nan!=Float.NaN); //true
+  System.out.println(10!=Float.NaN); //false
+
+
+EqualityOperator(==,!=)
+=======================
+
+  We can apply equality operator for every primitive type including boolean type
+
+a. System.out.println(10==20); //false
+b. System.out.println('a'=='b');//false
+c. System.out.println('a'=97.0);//false
+d. System.out.println(true==true);//true
+e. System.out.println(false==false); //true
+
+
+
+instanceof
+==========
+ This operator is used to check whether reference is of particular type or not.
+ if it is of same type/parent type then it returns true, otherwise it returns false.
+
+	Syntax:: r instanceof X
+               r=> reference
+               X=> class/Interface
+       Note:: relation from r to X should compulsorily exists otherwise CompileTimeError.
+
+eg:: Thread t= new Thread();
+     System.out.println( t instanceof Thread);//true
+     System.out.println( t instanceof Object);//true
+     System.out.println( t instanceof Runnable);//true
+     System.out.println( t instanceof String); //compiletime error
+
+eg:: String s=new String("sachin");
+     System.out.println(s instanceof String);//true
+     System.out.println(s instanceof Object);//true
+     System.out.println(s instanceof Thread);//compile time error
+
+eg:: Whenever we are checking parent object is of child type or not it would result in false
+     1. Object obj= new Object();
+        System.out.println(obj instanceof String);//false
+
+     2. Object obj=new String();
+        System.out.println(obj instanceof String);//true
+  
+Note: for any class/interface X,  null instanceof X is always false
+     3. System.out.println(null instanceof Runnable); //false
+
+Ternary operator
+================
+The ternary operator is a concise way to express conditional assignments in Java. 
+It's a shorthand for a simple if-else statement.
+
+syntax:
+	condition ? expression1 : expression2
+
+How it works:
+
+	Condition: Evaluate the condition.
+	Expression1: If the condition is true, execute this expression.
+	Expression2: If the condition is false, execute this expression.
+Example:
+
+	int number = 10;
+	String result = (number > 0) ? "Positive" : "Non-positive";
+	System.out.println(result);
+
+Output: Positive
+
+Example2 :
+
+	int age = 20;
+	String eligibility = (age >= 18) ? "Eligible to vote" : "Not eligible to vote";
+	System.out.println(eligibility);
+
+Output: Eligible to vote
+
+
+Logical Operators:
+==================
+
+
+	&& (Logical AND)
+	|| (Logical OR)
+	! (Logical NOT)
+
+Example:
+
+	boolean isRaining = true;
+	boolean isSunny = false;
+	boolean isUmbrellaRequired = isRaining && !isSunny; // true
+
+
+Bitwise Operators:
+
+	& (Bitwise AND)
+	| (Bitwise OR)
+
+Example:
+========
+
+	int a = 5, b = 3;
+	int result = a & b;
+	if(a>5 & b>2){System.out.println("bitwise and");}
+	if(a>5 | b>2){System.out.println("bitwise OR");}
+
+
+Assignment Operators:
+======================
+
+	= (Assignment)
+	+= (Add and assign)
+	-= (Subtract and assign)
+	*= (Multiply and assign)
+	/= (Divide and assign)
+	%= (Modulus and assign)   
+
+
+Example:
+========
+
+	int x = 10;
+	x += 5; // x becomes 15
+	x -= 5; // x becomes 5
+
+
+
+Evaluation of Java Operands
+===========================
+
+
+There is no precedence of java operands before applying any operators all operands will be evaluated from Left to Right.
+
+public class TestApp{
+	public static void main(String... args){
+		System.out.println(m1(1) + m1(2) *m1(3)/m1(4) *m1(5) +m1(6));
+	}
+	public int m1(int i){
+		System.out.println(i);
+		return i;
+	}
+}
+
+Note::
+1+2*3/4*5+6
+1+6/4*5+6
+1+1*5+6
+1+5+6
+6+6
+12

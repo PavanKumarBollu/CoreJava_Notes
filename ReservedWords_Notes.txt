@@ -1,0 +1,23 @@
+ReservedWords:
+==============
+
+Reserved words in java have some predifined meaning to it so we can't use those words for the other purpose like identifiers.
+
+	Refer : ReservedWords_Chart.png
+
+
+Literal
+=======
+
+Literal is a constant value which we can assinged to a variable is called literals 
+
+	Example:	
+		String name = "RohitSharma";
+
+			String is a datatype
+			name is a identifiers
+			"RohitSharma" is a literal.
+
+-> All the reserved words in java starts with lowercase latters.
+	
+
