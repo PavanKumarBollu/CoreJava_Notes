@@ -1,0 +1,78 @@
+Compilation and Execution Of Java Programs:
+===========================================
+
+1.Compilation:
+==============
+
+	Source Code: You write Java code in a text editor and save it with a .java extension.
+
+	Compiler: The Java compiler, javac, reads the source code and checks for syntax errors and other potential issues.
+
+	Bytecode Generation: 	If there are no errors, the compiler translates the source code into bytecode, 
+				which is platform-independent. This bytecode is stored in a .class file.
+
+2.Execution:
+============
+
+
+	JVM: The Java Virtual Machine (JVM) is a software layer that interprets and executes the bytecode.
+
+	Class Loading: The JVM loads the necessary class files into memory.
+
+	Bytecode Verification: The JVM verifies the bytecode to ensure it follows Java's security and integrity rules.
+
+	Bytecode Interpretation: The JVM interprets the bytecode and executes it, line by line.
+
+	Just-In-Time (JIT) Compilation: For performance optimization, 
+					The JVM can compile frequently executed parts of the bytecode into native machine code. 
+					This speeds up execution.
+
+
+Example:
+========
+
+public class Sub{
+
+    public static void main(String[] args) {
+
+        int i = 20;
+	int j = 30;
+	
+	System.out.println("The Subtraction of the " + i + ", " + j + " is : " + (i-j));
+
+    }
+}
+
+
+
+Compilation:
+============ 
+
+javac Sub.java 
+
+this command will genarate the .class file which jvm will use at the time of the execution.
+
+
+
+Execution:
+==========
+
+java Sub 
+
+this command will starts the jvm and loads the .class file and executes the main method.
+
+
+Output:
+=======
+
+The Subtraction of the 20, 30 is : -10
+
+
+Task:
+=====
+
+1.Write any two java programs, compile and run the program observe the output..?
+
+
+
+

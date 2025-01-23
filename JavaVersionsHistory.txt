@@ -1,0 +1,105 @@
+Java 5 (2004):
+
+	Generics: Introduced type safety and improved code readability.
+	Autoboxing/Unboxing: Simplified conversions between primitive types and their corresponding wrapper classes.
+	Enhanced for loop: A concise way to iterate over arrays and collections.
+	Enums: Provided a type-safe way to define a set of constants.
+	Varargs: Allowed methods to accept a variable number of arguments.
+
+
+Java 6 (2006):
+	Scripting support: Integrated scripting languages like JavaScript and Python.
+	JDBC 4.0: Enhanced database connectivity with improved performance and features.
+	Pluggable annotations: Allowed custom annotations to be processed at runtime.
+	Performance improvements: Optimized the JVM for better performance.
+
+
+Java 7 (2011):
+	Diamond operator: Simplified generic instantiation.
+	Try-with-resources: Automatically closed resources at the end of a try block.
+	String in switch: Allowed strings to be used as switch case labels.
+	Binary literals: Introduced binary literals using the 0b prefix.
+	Numeric literal underscores: Improved readability of large numbers.
+
+
+Java 8 (2014):
+	Lambda expressions: Functional programming style for concise code.
+	Streams API: A powerful way to process collections of data.
+	Default and static methods in interfaces: Enhanced interface capabilities.
+	Date and Time API: A more flexible and robust API for date and time operations.
+	Optional class: Handled optional values gracefully.
+
+
+Java 9 (2017):
+	Module system (Project Jigsaw): Improved modularity and encapsulation.
+	JShell: A REPL for interactive Java programming.
+	HTTP/2 client: A modern HTTP client with improved performance and features.
+	Reactive Streams API: Support for asynchronous and non-blocking programming.
+
+
+Java 10 (2018):
+	Local variable type inference: Declared variables without explicitly specifying their type.
+	Parallel full GC for G1: Improved garbage collection performance.
+
+
+Java 11 (2018):
+	LTS release: Long-term support for production environments.
+	HTTP client API: A standardized HTTP client API.
+	Lambda parameters: Local-variable syntax for lambda parameters.
+	String methods: New string methods like isBlank(), strip(), and stripLeading().
+
+
+Java 12 (2019):
+	Switch expressions: Enhanced switch statements with pattern matching.
+	File system API: A modern file system API for better file I/O operations.
+
+
+Java 13 (2019):
+	Text blocks: Multi-line strings with automatic formatting.
+	Switch expressions (preview): Further improvements to switch expressions.
+
+
+
+Java 14 (2020):
+	Pattern matching for instanceof: More concise pattern matching for instanceof checks.
+	Records: A concise way to define immutable data classes.
+
+
+Java 15 (2020):
+	Sealed classes: Restricted class inheritance.
+	Hidden classes: Improved class file format to support dynamic language features.
+
+Java 16 (2021):
+	Records (second preview): Further refinements to records.
+	Pattern matching for instanceof (second preview): Additional features for pattern matching.
+
+Java 17 (2021):
+	LTS release: Long-term support for production environments.
+	Sealed classes (second preview): Further refinements to sealed classes.
+	Pattern matching for instanceof (standard): Standardized pattern matching for instanceof.
+
+Java 18 (2022):
+	UTF-8 by default: UTF-8 as the default charset.
+	Simple Web Server: A simple web server for testing purposes.
+	Code snippets in Java API documentation: Improved documentation with code examples.
+
+Java 19 (2023):
+	Record patterns: Pattern matching for records.
+	Foreign Function & Memory API (Third Incubator): Interoperability with native code.
+	Vector API (Fourth Incubator): Improved vector operations.
+
+Java 20 (2023):
+	Record patterns (Second Preview): Further refinements to record patterns.
+	Pattern Matching for switch (Third Preview): Additional features for pattern matching in switch statements.
+
+Java 21 (2023):
+	Record patterns (Standard): Standardized record patterns.
+	Pattern Matching for switch (Standard): Standardized pattern matching for switch statements.
+	Virtual Threads: Lightweight user-mode threads.
+
+Java 22 (2023):
+	Scoped Values: Local variables with limited scope.
+	Pattern Matching for switch (Preview): Additional features for pattern matching in switch statements.
+
+
+

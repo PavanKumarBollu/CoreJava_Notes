@@ -1,0 +1,182 @@
+DataTypes:
+==========
+
+Every variable or Expression has a type in java. and all the types are strictly typed in java.
+
+bcz java is strictyly typed language the compiler role is to check the literal stored in the variable can handle it or not 
+this checking is called typeChecking/ Strictly types checking.
+
+
+				DataTypes
+				    |
+				    |
+			 ___________|____________
+			|			|
+		     Primitive	          Non-Primitive
+
+
+
+
+Datatypes
+-------------
+ 	Numeric Datatype
+		a. whole number
+			1. byte(1byte)
+			2. short(2bytes)
+			3. int(4bytes) * commonly used datatype
+			4. long(8 bytes)
+		b. realnumber
+			1. float
+			2. double
+
+
+
+Non-PrimitiveDataTypes:
+=======================
+
+String
+Object
+List
+Tuple
+Stack
+Queue......  etc.
+
+
+Primitive DataTypes:
+====================
+
+1.byte
+2.short
+3.int
+4.long
+5.float
+6.double
+7.boolean
+
+Note : the information of the datatypes are given in the following way
+	1.size of the data types
+	2.min values it can store
+	3.max value it can store
+
+byte:
+=====
+	byte: 
+	size -> 8 bits
+	minvalue -> -128
+	maxvalue -> 127
+
+
+	System.out.println("Byte Size :: "+ Byte.SIZE);
+ 	System.out.println("MINVALUE of byte is :: "+ Byte.MIN_VALUE);
+ 	System.out.println("MAXVALUE of byte is :: "+ Byte.MAX_VALUE);
+
+short:
+======
+
+	size : 16bits(2 byte)
+ 	minvalue: -32768
+ 	maxvalue: +32767
+
+ 	System.out.println("Size of int is :: "+Short.SIZE);
+ 	System.out.println("MINVALUE of int is :: "+Short.MIN_VALUE);
+	System.out.println("MAXVALUE of intt is :: "+Short.MAX_VALUE);
+
+int:
+====
+
+	size: 32bits(4 bytes)
+	minvalue:-2147483648
+	maxvalue: 2147483647
+
+ 	System.out.println("Size of int is :: "+Integer.SIZE);
+ 	System.out.println("MINVALUE of int is :: "+Integer.MIN_VALUE);
+	System.out.println("MAXVALUE of intt is :: "+Integer.MAX_VALUE);
+
+
+Note: 
+=====
+By default the compile will store the whole numbers as a int only. we can also store the values in the byte and short also.
+
+
+long:
+=====
+
+	size: 64bits(8bytes)
+	minvalue:-9223372036854775808
+	maxvalue:9223372036854775807
+
+	System.out.println("Size of long is :: "+Long.SIZE);
+ 	System.out.println("MINVALUE of long is :: "+Long.MIN_VALUE);
+ 	System.out.println("MAXVALUE of long is :: "+Long.MAX_VALUE); 
+
+note:
+=====
+	if you want to store the values in the long type then you must suffix the value with either "L" or "l".
+	Otherwise compile time error
+	
+	Ex: 
+		long a = 123l;
+		long b = 123; //CE
+
+
+float:
+======
+	size: 32 bits(1 byte = 8bits, 32/8 = 4 bytes)
+ 	minvalue:1.4E-45
+	maxvalue: 3.4028235E38
+
+	System.out.println("Size of float is :: "+Float.SIZE);
+	System.out.println("MINVALUE of float is :: "+Float.MIN_VALUE);
+	System.out.println("MAXVALUE of float is :: "+Float.MAX_VALUE);
+	
+Note:
+=====
+	By default compiler will store the realNumbers/ decimalNumbers as double values if you want to store it a float,
+	then you have to suffix with "f" or "F" other wise CE.
+	
+
+double:
+=======
+	size: 64s bits(1 byte = 8bits, 64/8 = 8 bytes)
+ 	minvalue:4.9E-324
+ 	maxvalue: 1.7976931348623157E308
+
+
+	System.out.println("Size of double is :: "+	Double.SIZE);
+	System.out.println("MINVALUE of double is :: "+	Double.MIN_VALUE);
+	System.out.println("MAXVALUE of double is :: "+	Double.MAX_VALUE);
+
+
+
+Note:
+======
+
+To map primitive data as Object in java from JDK1.5 concept of "Wrapper class" was introduced in JDK1.5 version.
+	respective Object classes of primitive datatypes.
+
+ byte -------------> Byte(C)
+ short--------------> Short(C)
+ int --------------> Integer(C)
+ long --------------> Long(C)
+ float --------------> Float(C)
+ double------------> Double(C)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

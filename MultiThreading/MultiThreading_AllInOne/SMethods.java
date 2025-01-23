@@ -1,0 +1,77 @@
+class ObjectLevelLock
+{
+	double total = 0;
+	public synchronized void wish()
+	{
+		System.out.println(Thread.currentThread().getName() + " Started its Execution ");
+		for (int i =0; i < 5 ; i++)
+		{
+			try
+			{
+				System.out.println("this is called ObjectLevelLock Or Synchronized Methods - " + Thread.currentThread().getName());
+				Thread.sleep(2000);
+			}
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+			
+		}
+		System.out.println(Thread.currentThread().getName() + " finished it's Execution ");
+		pointsToRemember();
+	}
+
+	public void pointsToRemember()
+	{
+		System.out.println("");
+		System.out.println("Important Points About the Synchronized Methods:");
+		System.out.println("================================================");
+		System.out.println("1.When You apply synchronized keyword in method signature it will applies the lock on the curretObject");
+		System.out.println("2.At a time only one thread can access the synchronized methods");
+		System.out.println("3.when you use different objects for different Threads then it's will completely no use of using synchronized keyword because different objects different locks");
+		System.out.println("4.Normal methods we can execute without worrying about the lock");
+		System.out.println("");
+	}
+
+}
+
+
+
+
+class SMethods
+{
+	public static void main(String[] ar)
+	{
+		// creating a object of the ObjectLevelLock for making the Threads to use this Object.
+		ObjectLevelLock oll = new ObjectLevelLock();
+
+		//case:1
+		// Creating the Thread using anonymus class object way
+		Thread t = new Thread(()->{
+			oll.wish();
+
+		});
+		t.start();
+
+
+		// Main Thread is calling the wish Method
+		// oll.wish();
+
+
+		//case:2
+		// passing different Objects to the different Threads
+		ObjectLevelLock oll1 = new ObjectLevelLock();
+		Thread t1 = new Thread(()->{
+			oll.wish();//calling on the same Object
+			//oll1.wish();//different Objects for Different Threads
+		});
+		t1.start();
+	
+
+
+
+
+
+	
+	}
+}

@@ -1,0 +1,35 @@
+class ChangePriority extends Thread
+{
+	@Override
+	public void run()
+	{
+		for(int i = 0; i < 10; i++)
+		{
+			System.out.print(" Child " );
+		}
+		System.out.println();
+	}
+}
+
+class Example12
+{
+	public static void main(String... arg)
+	{
+		ChangePriority cp = new ChangePriority();
+		System.out.println("Default Child Priority :" + cp.getPriority());
+		System.out.println("Changing the Priority : ");
+		cp.setPriority(7);
+		System.out.println("now child Priority : " + cp.getPriority());
+		
+		cp.start();
+
+
+		for(int i = 0; i < 10; i ++)
+		{
+			System.out.print("Main ");
+		}
+		System.out.println();
+
+
+	}
+}

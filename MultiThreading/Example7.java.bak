@@ -1,0 +1,54 @@
+class MyRunnable implements java.lang.Runnable
+{
+	@Override
+	public void run()
+	{
+		for(int i =0; i < 10; i++)
+		{
+			System.out.print(i);
+		}
+		System.out.println();
+
+	}
+}
+
+class Main 
+{
+	public static void main(String... args)
+	{
+		MyRunnable mr = new MyRunnable();
+		Thread t1 = new Thread();
+		Thread t2 = new Thread(mr);
+
+		// case:1
+			// a new thread will be created and that will executes the default run method inside the Thread Class
+			t1.start();
+
+
+
+		// case:2
+		
+			//a new thread will be created and that thread will executes the run method of our MyRunnable Class.
+			t2.start();
+
+		// case:3
+			
+			// no new thread will be created but Thread Class run method will be executed just like a normal method call.
+			t1.run();
+
+		// case:4
+			
+			// no new Thread will be created but Our MyRunnable Class run method will be executed just like a normal method call.
+			t2.run();
+
+
+		// case:5 
+			// this will results in compile time Error
+			//mr.start();
+
+		// case:6
+
+			//no new Thread will be created but run method of MyRunnable class will executed just like normal method call.
+			mr.run();
+	}
+}

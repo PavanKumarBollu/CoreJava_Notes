@@ -1,0 +1,20 @@
+Implement the class MovieTicket with the instance variables and methods mentioned below.
+
+//instance variables
+
+movieId:int
+noOfSeats:int
+costPerTicket:double
+
+//constructor
+MovieTicket(movieId:int, noOfSeats:int)
+
+
+//methods
+calculateTotalAmount():double
+getMovieId():int
+setMovieId(movieId:int):void
+getNoOfSeats():int
+setNoOfSeats(noOfSeats):void
+getCostPerTicket():double
+setCostPerTicket(costPerTicket:double):void

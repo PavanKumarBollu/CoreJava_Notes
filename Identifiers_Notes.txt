@@ -1,0 +1,89 @@
+Identifier
+========
+->Identifier is nothing but a name in Java Program.
+->It can be a classname,methodname,variable name and label name.
+
+Example 1:
+----------
+class Test{
+	public static void main(String[] args){
+		String name = "rohitSharma";
+	}
+}
+
+Totally 5 identifers
+
+Example 2:
+----------
+
+class Test{
+
+	public static void main(String[] args){
+		System.out.println("Rohit");
+	}
+}
+
+Totally 7 identifiers.
+
+Rules for writing an identifier (for compiler and jvm)
+------------------------------------------------------
+
+	We have total 7 rules are there in java naming convensions
+
+	
+1: 
+	
+	The following charecters only use should use in the identifiers names
+	a to z, A to Z,0 to 9, _(underscore),$ 
+
+2: 
+	other then above charecters if use any other charecters, it would result in compile time error
+	int ^ 		= 10;(invalid)
+	int sum 	= 10;(valid)
+	int #age 	= 35;(invalid) 
+3: 
+	Identifiers are not allowed to start with digits
+
+	int marks = 100;(valid)
+	int 1marks = 100;(invalid)
+4: 
+	Java identifiers are case sensitive,meaning number and Number is different.
+	class Demo{
+
+		int num=10;
+		int Num=20;
+		int nUm= 30;
+		int NUM = 40;
+	}
+5: 
+	identifiers has no length limit, but as a good practice we should keep to maximum 15 charecters
+	int priorityOfThreadWithMinValue = 1;
+6: 
+	We can't use reserve words as a identifers.
+		 eg: int else = 10; //CE
+7: 
+	Predefined class names can be used as identifiers like Integer, String, Runnable, Clonable....etc
+
+Example3:
+
+	String Clonable = "sachin";
+	System.out.println(Clonable);//sachin
+
+Example4:
+
+	int String = 10;
+	System.out.println(String);//10
+
+Note: Even though predefined class names can be used as an indetifiers,it is not a 
+good practise to use those names in identifier names.
+
+
+Question
+========
+	int If =10;//if and If is different
+	System.out.println(If);//10
+	int Integer = 10;
+	System.out.println(Integer);//10
+	int int =10;//CE
+	System.out.println(int);
+	
