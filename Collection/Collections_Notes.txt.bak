@@ -1,0 +1,63 @@
+Collections
+===========
+--> we have multiple names like Collections Framework || Collection APIs
+--> it was introduced in 1.2 version 
+--> the original developer of the collection is joushwa and given sunmicrosystem team for adding then then have added in 1.2 version
+
+--> The following are the main important Classes in Collection 
+	1.ArrayList
+	2.LinkedList
+	3.ArrayDequeue
+	4.PriorityQueue
+	5.TreeSet
+	6.HashSet
+	7.LinkedHashSet
+
+--> The Following are the main important Interfaces in Collection
+	1.List(I)
+	2.Queue(I)
+	3.Set(I)
+
+-->	ArrayList
+	=============
+	-- its uses dyanmic array dataStructure for organizing the data.
+	-- its dynamic in size.
+	-- it can store both homegenious and heteroginious data.
+	-- index based accessing is allowed.
+	-- inserting data in any given position is possible.
+	-- inserting data in frontend and middle of the list is possible but not recomded due to elements shifting.
+	-- important methods in ArrayList
+		1.add(Object);
+		2.add(index, Object | Collection);
+		3.add(Collection);
+		4.ensureCapacity(int capacity);
+		5.trimToSize();
+		6.size();
+		7.isEmpty();
+		8.contains(Object);
+		9.indexOf(Object);
+		10.lastIndexOf(Object);
+		11.get(int index)
+		12.getFirst();
+		13.getLast();
+		14.set(int index, Object);
+		15.remove(int index);
+		16.removeFirst();
+		17.removeLast();
+		18.equals();
+		19.remove(Object);
+		20.clear();
+		21.addAll(Collection); //--> gets all the elements from the Given Collection and adds to the collection
+		22.addAll(int index, Collection);
+		23.forEach(Function);
+		24.sort(Comparator);
+		25.sublist(int startIndex, int endIndex);
+
+
+
+
+
+
+
+
+
