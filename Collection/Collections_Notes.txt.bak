@@ -19,9 +19,11 @@ Collections
 	3.Set(I)
 
 -->	ArrayList
-	=============
+	==============
 	-- its uses dyanmic array dataStructure for organizing the data.
 	-- its dynamic in size.
+	-- searching time O(n);
+	-- it implements List(I) Interface.
 	-- it can store both homegenious and heteroginious data.
 	-- index based accessing is allowed.
 	-- inserting data in any given position is possible.
@@ -45,16 +47,76 @@ Collections
 		16.removeFirst();
 		17.removeLast();
 		18.equals();
-		19.remove(Object);
+		19.remove(Object);||removeRange(int startIndex, int endIndex);
 		20.clear();
-		21.addAll(Collection); //--> gets all the elements from the Given Collection and adds to the collection
+		21.addAll(Collection); //--> gets all the elements from the Given Collection and adds to the collection as individual Objects
 		22.addAll(int index, Collection);
 		23.forEach(Function);
 		24.sort(Comparator);
 		25.sublist(int startIndex, int endIndex);
 
+-->	LinkedList
+	==========
+	--it is uses the doublyLinkedList DataStructure.
+	--it implements the list(I), Deque(I) Interfaces.
+	-- index based Accessing is allowed
+	-- searching time O(n);
+	--important Methods in ArrayList
+		1.add(Object);
+		2.add(index, Object | Collection);
+		3.add(Collection);
+		4.offerFrist(Element); --> we will give an element to the list it may add or may not add in the firstLocation.
+		5.offerLast(Element);
+		6.size();
+		7.peekFirst(); --> E | peekLast(); --> E | peek(); --> E
+		8.contains(Object);
+		9.indexOf(Object);
+		10.lastIndexOf(Object);
+		11.get(int index)
+		12.getFirst();
+		13.getLast();
+		14.set(int index, Object);
+		15.remove(int index);
+		16.removeFirst();
+		17.removeLast();
+		18.pollFirst();--> E | pollLast(); --> E | poll(); --> E
+		19.remove(Object);||removeRange(int startIndex, int endIndex);
+		20.clear();
+		21.addAll(Collection); //--> gets all the elements from the Given Collection and adds to the collection as individual Objects
+		22.addAll(int index, Collection);
+		23.push();
+		24.pop();
+		25.
 
+	
 
+-->	ArrayDeque
+	==========
+	--> follows doubleEnded queue 
+	--> not Requires the contigeous memory locations
+	--> Searching time is O(n);
+	--> implements Deque Interface(I);
+
+	important Methods
+	=================
+		1. addFirst(Element);
+		2. addLast(Element);
+		3. removeFirst(Element);
+		4. removeLast(Element);
+		5. delete(int index);
+		6.forEach();
+
+-->	PriorityQueue
+	=============
+	--> follows minHeap dataStructure
+	--> searching time is O(n);
+	--> no matter what order you insert the element the smallest one will always come to the first position;
+	--> first it will inserts at left position then it will compare if new elements is small then swifting will happen same goes to the right also
+	--> Example --> refer PQ.png
+	--> while accesing the Elements it follows the VLR --> root left right
+
+			
+			
 
 
 
