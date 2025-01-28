@@ -1,0 +1,24 @@
+import java.util.TreeSet;
+import java.util.*;
+
+
+class TS 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("TreeSet");
+		System.out.println("It follows BinaraySearchTree Algorithm");
+		System.out.println("if the result is balanced binary Search Tree then the searching time will be O(log2n)");
+		System.out.println("if the result is sweved Tree then the searching time will be O(n) ");
+		System.out.println("the moment it stores the elements in the tree then it will automattically sorts in the aschending order");
+		System.out.println("it follows the lVR method while accessing the tree Elements LEFT VALUE RIGHT");
+		System.out.println();
+
+		TreeSet ts = new TreeSet();
+		ts.add(10);
+		ts.add(50);
+		ts.add(20);
+		ts.add(30);
+		System.out.println(ts);
+	}
+}
