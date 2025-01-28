@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-//import java.util.*;
+import java.util.*;
 
 
-class ArrayListTest 
+class AL
 {
 	public static void main(String[] args) 
 	{
@@ -35,9 +35,30 @@ class ArrayListTest
 		al3.addAll(0,al2);//adds the all the collection objects into al2 ArrayList from 0th index.
 		System.out.println(al3);
 
-		System.out.println(al3.getFirst());
-		System.out.println(al3.getLast());
-		System.out.println(al3.get(4));
+		//System.out.println(al3.getFirst());
+		//System.out.println(al3.getLast());
+		//System.out.println(al3.get(4));
+
+
+		System.out.println("**********************************" + al3.size());
+		// list ierator needs the integer from where it has to start
+
+		System.out.println(al3.listIterator(al3.size()));
+
+		ListIterator li = al3.listIterator(al3.size());
+
+		//while(li.hasPrevious() == true);
+		//{
+			System.out.println(li.previous());
+		//}
+
+		System.out.println("**********************************");
+
+		/*Iterator itr = al3.iterator();
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next() + " " );
+		} */
 
 
 	}
