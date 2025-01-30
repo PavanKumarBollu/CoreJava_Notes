@@ -1,0 +1,31 @@
+class WhyGenarics 
+{
+	public static void main(String[] args) 
+	{
+		String[] str = new String[5];
+		str[0] = "Pavan";
+		str[1] = "Kumar";
+		//str[2] = 25; // CE 
+		System.out.println(" ");
+
+		ArrayList al = new ArrayList();
+		al.add("Pavan");
+		al.add("Kumar");
+		al.add(25);
+		//assuming that i have stored all the objects as String
+		String str2 = (String) al.get(0);
+		String str3 = (String) al.get(1);
+		//String str4 = (String) al.get(2);// RE--> ClassCastException
+
+		System.out.println(al.get(3));
+
+		ArrayList<String> alg = new ArrayList<String>();
+		alg.add("Pavan");
+		alg.add("Kumar");
+		//alg.add(25);CE 
+
+		System.out.println(alg.get(0));
+		System.out.println(alg.get(1));
+
+	}
+}
