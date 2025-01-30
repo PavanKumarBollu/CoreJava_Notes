@@ -1,0 +1,45 @@
+Maps in Collections
+===================
+--> Maps is a Interface in Java
+--> When you want to store the elements in the form of key -- pair or key -- value then we will go with maps in java
+--> We use put method to insert the entries into the any of the set
+--> dominates the Garbage Collector
+--> keys -- we can't have duplicates
+--> values -- we can have duplicates
+--> Entry is a subInterface of the Maps Interface
+
+
+HashMaps
+=======
+--> introduced in jdk 1.2v
+--> Exmaple of the HashMap is
+	-->
+	HashMap hm=new HashMap();
+	hm.put(10, "Sachin");//Entry
+	hm.put(7, "MSD");
+	hm.put(18, "Kohli");
+--> Each and every data you inserted with key and values into the hashmap we call it as a entry.
+
+--> threre are some important methods are there to access the data in hashmaps
+	--> values():Collections --> returns all the values of the HashMap 
+	--> keySet():Set --> returns all the keys of the hashMap
+	--> entrySet():Set --> return both keyandvalues of the hashMap
+
+	Examples : Refere --> HM.java file
+
+LinkedHashMap
+=============
+	it's just like a LinkedHashSet it also used to keep the order of the insertion preserved.
+	--> introduced in jdk 1.4v
+	Example 
+		LinkedHashMap lhm=new LinkedHashMap();
+		lhm.put(10, "Sachin");
+		lhm.put(7, "MSD");
+		lhm.put(18, "Kohli");
+		refer:LHM.java
+
+WeakedHashMap
+=============
+
+	-- the only difference between the hashMap and weaked HashMap is weaked hashmap will not dominated the garbage collector.
+	Refere --> HMvsWHM.java file

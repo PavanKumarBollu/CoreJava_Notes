@@ -113,7 +113,7 @@ Collections
 	--> no matter what order you insert the element the smallest one will always come to the first position;
 	--> first it will inserts at left position then it will compare if new elements is small then swifting will happen same goes to the right also
 	--> Example --> refer PQ.png
-	--> while accesing the Elements it follows the VLR --> root left right
+	--> while accesing the Elements it follows the VLR --> root left right.
 
 			
 			
