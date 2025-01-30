@@ -19,5 +19,13 @@ class WhyGenarics
 
 		System.out.println(al.get(3));
 
+		ArrayList<String> alg = new ArrayList<String>();
+		alg.add("Pavan");
+		alg.add("Kumar");
+		//alg.add(25);CE 
+
+		System.out.println(alg.get(0));
+		System.out.println(alg.get(1));
+
 	}
 }
