@@ -5,9 +5,9 @@ Collections
 --> the original developer of the collection is joushwa and given sunmicrosystem team for adding then then have added in 1.2 version
 
 --> The following are the main important Classes in Collection 
-	1.ArrayList
-	2.LinkedList
-	3.ArrayDequeue
+	1.ArrayList-- List(I)
+	2.LinkedList -- List(I)
+	3.ArrayDequeue -- List(I), Deque(I).
 	4.PriorityQueue
 	5.TreeSet
 	6.HashSet
@@ -115,7 +115,10 @@ Collections
 	--> Example --> refer PQ.png
 	--> while accesing the Elements it follows the VLR --> root left right.
 
-			
+-->	TreeSet
+	=======
+	--> it follows binarySearchTree Algorithm
+	--> Searching Time Will be 
 			
 
 
