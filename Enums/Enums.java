@@ -1,0 +1,30 @@
+// For every enum there will saparate .class file will be created 
+// anatations uses the concept of enus internally
+// when ever we want to create a group of constants then we will go for the concept of enums
+// enum can have the normal feilds(instance variables)
+// enum can have methods
+// enum can have constructor
+// here the value and name of the feild is same if name of the variable is PASS then the value of that variable is also PASS
+
+
+// Examples:
+enum result
+{
+	PASS,// public static final result PASS = new result(); 
+	FAIL,// public static final result FAIL = new result();
+	NR,// public static final result NR = new result();
+}
+
+
+class Enums 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
+
+enum Days
+{
+	MON, TUE, WED, THU, FRI, STA, SUN
+}
