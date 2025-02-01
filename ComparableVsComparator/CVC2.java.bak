@@ -1,0 +1,18 @@
+import java.util.*;
+
+class CVC2 
+{
+	public static void main(String[] args) 
+	{
+		//note : StringBuffer won't implement the Comparable Interface
+		TreeSet  t = new TreeSet ();
+		t.add(new StringBuffer("Pavan"));
+		t.add(new StringBuffer("Kumar"));
+		t.add(new StringBuffer("Nikhil"));
+		t.add(new StringBuffer("Shagu"));
+		t.add(new StringBuffer("Padma"));
+
+		System.out.println(t);;;;;
+
+	}
+}

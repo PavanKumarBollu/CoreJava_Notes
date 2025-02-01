@@ -1,0 +1,22 @@
+TreeSet t = new TreeSet();
+			|--> interally calls public TreeSet(); Constructor
+
+--> the public TreeSet(); constructor internally calls comparable interface methods to sort the objects
+    Based on the default sorting order 
+
+What is the comparable interface
+================================
+	this is a functional interface prensent inside the java.lang. package
+	This is interface is internally used by TreeSet Objects during the sorting processof the objects
+
+	@FunctionalInterface
+	public interface java.lang.Comparable<T>{
+
+		public abstract int compareTo(T);
+
+	}
+
+	Example1: Refere CVC1.java
+NOTE:
+====
+	When you work with TreeSet the data Should be homegeneous other wise you will get ClassCastException
