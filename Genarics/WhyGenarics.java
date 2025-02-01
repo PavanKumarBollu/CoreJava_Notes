@@ -1,5 +1,7 @@
 class WhyGenarics 
 {
+	//to promote the type safety and to avoid casting problem while traversing the collection
+	// genarics was introduced in 1.5v before that no genaric concept was there
 	public static void main(String[] args) 
 	{
 		String[] str = new String[5];
