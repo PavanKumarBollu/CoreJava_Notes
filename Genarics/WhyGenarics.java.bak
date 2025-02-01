@@ -1,5 +1,6 @@
 class WhyGenarics 
 {
+	//to promote the type safety and to avoid casting problem while traversing the collection
 	public static void main(String[] args) 
 	{
 		String[] str = new String[5];

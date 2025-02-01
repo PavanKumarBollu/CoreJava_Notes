@@ -1,0 +1,85 @@
+Genarics
+=========
+A Class With Type Parameter We Call it as a Genaric Class.
+
+--> before 1.5v there was no concept of the genarics so declaration of colllection is follows upto 1.4v
+	--> ArrayList al = new ArrayList();
+	so here while addingup the data we can add anything but while retriving the data we encouter the problem of 
+	to typecast the data into which format like toString or toIntegerType of Object Type so to avoid this problem and 
+	to promote the typesafy from jdk 1.5 version we have the concept of Genarics to avoid this problem
+
+	1.5v of above same code
+	----------------------- 
+				BaseParameter
+				|
+	ArrayList<T> al = new ArrayList<T>; 
+		  |_ 
+		    is a type parameter which means we can specify the type of data which we are going to store in that 
+		    like String Integer Float Double and Real Time Objects Like Students Employee or so On.
+
+
+--> Polymorphism concept is applicable to at the Base Level not at the TypeParameter Level
+	Example:
+		\/	--> List<String> l	= new ArrayList<String>();//Valid
+		 X	--> List<Object> l1	= new ArrayList<String>();//Not Valid
+		\/	--> Set<Integer> s1	= new TreeSet<Interger>();//valid
+
+--> primitive TypeParameter is not allowed it is applicable only for class and interface types
+	Exampls:
+		X -- > ArrayList<int> al = new ArrayList<int>();//not valid
+		X --> ArrayList<double> al2 = new ArrayList<double>();// not valid
+
+	CE: unexpected Type found:Primitive required:reference
+
+
+--> When Ever you go for the genaric concept compiler will modify the two methods based on your specified type
+	--> Type Casting is not required While accesing the Elements
+	Ex: ArrayList<String> al = new ArrayList<String>();
+
+	ArrayList {
+
+		add(String s);
+	
+		String get(int index);
+	}
+	
+	here now you can't add anydata other than Strings if you try to add then CE
+	
+		Examples : 
+
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Pavan");
+		names.add("Shaggu");
+		names.add(10); //CE incompatible types: int cannot be converted to String
+		
+		String name = names.get(0);//no type casting required 
+
+--> own genaric Class
+=====================
+
+Based on the requirement we can create our own genaric class also 
+	Examples:
+		Account<T>
+		{
+		}
+
+		Account<Savings> ac1 = new Account<Savings>();
+		Account<Direct> ac2 = new Account<Direct>();
+
+		Refere: UDGenarics.java for more examples
+
+--> Genarics is a such concept which will applicable only at the compiler level the moment when the code reches to the jvm it will remove the all the genarics 
+--> to just make the collection type safety we use the genarics but for the jvm its like normal code to execute
+
+
+
+
+
+
+
+
+
+
+
+
+
