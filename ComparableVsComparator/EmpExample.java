@@ -1,0 +1,87 @@
+/* 
+	 Write a Program to Insert Employee Objects into the TreeSet 
+	 where DNSO is Based on Ascending Order of EmployeeId and 
+	Customized Sorting Order is Based on Alphabetical Order of Names:
+
+*/
+import java.util.Comparator;
+import java.util.TreeSet;
+
+class Employee implements Comparable
+{
+	private String name;
+	private int id;
+	
+	public String getName(){
+		return this.name;
+	}
+	public int getId(){
+		return this.id;
+	}
+	public Employee(String name, int id){
+		this.name = name;
+		this.id = id;
+	}
+
+	@Override
+	public String toString(){
+		return this.name+" ==> " + this.id;
+	}
+
+	@Override
+	public int compareTo(Object obj){
+		Employee empObj = (Employee) obj;
+		int id1 = this.id;
+		int id2 = empObj.id;
+		
+		if(id1<id2)
+			return -1;
+		else if(id1>id2)
+			return +1;
+		else
+			return 0;
+	
+	}
+}
+class CompEmployee implements Comparator
+{
+	@Override
+	public int compare(Object obj1, Object obj2)
+	{
+		Employee emp1 = (Employee) obj1;
+		Employee emp2 = (Employee) obj2;
+
+		String emp1Name = emp1.getName();
+		String emp2Name = emp2.getName();
+		return emp1Name.compareTo(emp2Name);
+	}
+
+}
+
+class EmpExample 
+{
+	public static void main(String[] args) 
+	{
+		//default Sorting Order Based On The EmployeeId
+		TreeSet t = new TreeSet();
+		t.add(new Employee("Pavan" , 123));
+		t.add(new Employee("Kumar" , 125));
+		t.add(new Employee("Yadav" , 124));
+		t.add(new Employee("Keethi" , 127));
+		t.add(new Employee("Padma" , 126));
+		System.out.println(t);
+		System.out.println();
+
+
+
+		TreeSet t1 = new TreeSet(new CompEmployee());
+		t1.add(new Employee("Pavan" , 123));
+		t1.add(new Employee("Kumar" , 125));
+		t1.add(new Employee("Yadav" , 124));
+		t1.add(new Employee("Keethi" , 127));
+		t1.add(new Employee("Padma" , 126));
+		System.out.println(t1);
+		System.out.println();
+
+	}
+}
