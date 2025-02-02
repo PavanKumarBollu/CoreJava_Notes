@@ -1,0 +1,32 @@
+/* 
+	 Write a Program to Insert StringBuffer Objects into the TreeSet 
+	 where Sorting Order is Alphabetical Order:
+*/
+
+import java.util.Comparator;
+import java.util.TreeSet;
+class CompStringBuffer implements Comparator
+{
+	@Override
+	public int compare(Object obj1, Object obj2)
+	{
+		String str1 = obj1.toString();
+		String str2 = obj2.toString();
+		return str1.compareTo(str2);
+		//Reverse Order return -str1.compareTo(str2);
+	}
+}
+class Ex4 
+{
+	public static void main(String[] args) 
+	{
+		TreeSet t = new TreeSet(new CompStringBuffer());
+		t.add(new StringBuffer("P"));
+		t.add(new StringBuffer("A"));
+		t.add(new StringBuffer("W"));
+		t.add(new StringBuffer("T"));
+		t.add(new StringBuffer("U"));
+		t.add(new StringBuffer("Q"));
+		System.out.println(t);
+	}
+}

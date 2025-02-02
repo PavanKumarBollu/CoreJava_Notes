@@ -42,3 +42,34 @@ Comparable(I)
 	    compareTo() method of the comparable and default aschending sorting will happen
 		Example refer: CVC3.java
 	NOTE: For String and Number Default sorting order will be ascending order
+
+Comparator
+=========
+	-- if we are not satisfied with the default sorting order or if you want to write your own sorting order then we can go for the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

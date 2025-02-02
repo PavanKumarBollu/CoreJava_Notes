@@ -41,3 +41,4 @@ Comparable(I)
 	--> When ever we depend on the default sorting nature of the TreeSet, internally the jvm will call the 
 	    compareTo() method of the comparable and default aschending sorting will happen
 		Example refer: CVC3.java
+	NOTE: For String and Number Default sorting order will be ascending order
