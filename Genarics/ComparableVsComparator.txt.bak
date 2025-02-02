@@ -19,4 +19,5 @@ What is the comparable interface
 	Example1: Refere CVC1.java
 NOTE:
 ====
-	When you work with TreeSet the data Should be homegeneous other wise you will get ClassCastException
+	to keep the data inside the TreeSet we should make sure that our data
+		a. is homogenous bcz it uses the comparTo method of the Comparable interface to sort the Objects

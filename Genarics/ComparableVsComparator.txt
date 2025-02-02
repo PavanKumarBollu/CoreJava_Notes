@@ -21,3 +21,9 @@ NOTE:
 ====
 	to keep the data inside the TreeSet we should make sure that our data
 		a. is homogenous bcz it uses the comparTo method of the Comparable interface to sort the Objects
+		b. the Object compulsurly implement the Interface Called Comparable otherwise ClassCastException
+			Examples: refere CVC2.java
+
+Note:
+====	
+	all the Wrapper Classes and String Class implements the Comparable interface and from jdk 11 onwords StringBuffer also started Implementing Comparable interface
