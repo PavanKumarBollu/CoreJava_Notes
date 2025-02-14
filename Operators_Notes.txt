@@ -1,5 +1,5 @@
 Operators
-=========
+========
 
 Operators are symbols which are used to perform the operations on the Operands.
 
