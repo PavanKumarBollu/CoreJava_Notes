@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class ForEachArray {
 	public static void main(String[] args) {
 		int [] demo = {12,25,124,214,35,14,47,55};
@@ -9,6 +11,7 @@ public class ForEachArray {
 //		for(int d: demo) {
 //			System.out.println(d);
 //		}
+Arrays.
 		
 		
 		for(int [] row:two ) {
