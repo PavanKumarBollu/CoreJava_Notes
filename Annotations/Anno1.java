@@ -1,7 +1,8 @@
 @FunctionalInterface
 interface In
 {
-	void dis();// public abstract void dis();
+	void dis();
+	// public abstract void dis();
 }
 class Overriding
 {
