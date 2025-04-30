@@ -2,6 +2,8 @@ interface i
 {
 	// by default methods are public and abstract but now we can have the methods with body in interface also
 	//void methodOne(); // --> public abstract void methodOne();
+
+	//
 	//void methodTwo();// --> public abstract void methodTwo();
 	// new ways of having methods inside the interface
 	default void methodThree(){
